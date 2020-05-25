@@ -1,0 +1,49 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous")
+  body
+    header(class="container-fluid d-md-flex flex-md-row align-content-center justify-content-center d-sm-flex flex-sm-column align-content-xs-center justify-content-xs-center p-5")
+      div(class="col-md-8 col-xs-6 align-self-center justify-content-center")
+        h1(id="main-tagline") Awesome Travels
+      div(class="col-md-4 col-xs-6 pl-5 align-self-center justify-content-center")
+        nav(id="main-nav")
+          a(class="nav-items mr-5 text-decoration-none" href="") Sign up
+          a(class="nav-items text-decoration-none" href="") Login
+    div(id="inputs-div" class="container-fluid d-lg-flex flex-lg-row align-content-center justify-content-center d-md-flex flex-md-column align-content-xs-center justify-content-xs-center p-4")
+        div(class='pr-3 align-self-center')
+          label(for='destination-input') Destination
+          input(id='destination-input' type='text' min='01-01-2020' max='01-01-2050')
+        div(class='pr-3 align-self-center')
+          label(for='duration-input') Duration
+          input(id='duration-input' type='number' min='1' max='365' placeholder='Number of days')
+        div(class='pr-3 align-self-center')
+          label(for='departure-input') Departure date
+          input(id='departure-input' type='date')
+        div(class='pr-3 align-self-center')
+          label(for='guests-input') Number guests
+          input(id='guests-input' type='number' min='1' max='20')
+        div(class='pr-3 align-self-center')
+          label(for='stars-selection') Rating
+          select(id='stars-selection')
+            option(value='1') ⭐
+            option(value='2') ⭐⭐
+            option(value='3') ⭐⭐⭐
+            option(value='4') ⭐⭐⭐⭐
+            option(value='5') ⭐⭐⭐⭐⭐
+        div(class='pr-3 align-self-center')
+          label(for='stars-selection') Price
+          select(id='pricing-selection')
+            option(value='1') 💲
+            option(value='2') 💲💲
+            option(value='3') 💲💲💲
+            option(value='4') 💲💲💲💲
+            option(value='5') 💲💲💲💲💲
+        div(class='pt-4 align-self-center')
+          button(id='btn') Search
+    block content
+
+img(src='images/beach.jpg' id="main-img" class='img-fluid')

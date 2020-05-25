@@ -1,0 +1,59 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  padding: 0px;
+  margin: 0px;
+  font: 14px "Bahnschrift", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+header {
+  background-color: #33cccc;
+  height: auto;
+}
+
+#main-tagline {
+  font-family: Bahnschrift;
+  font-size: 3.5rem;
+  color: white;
+}
+
+.nav-items {
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+}
+
+#inputs-div {
+  height: auto;
+  background-color: #15a8b0;
+  font-size: 1.2rem;
+}
+
+label, input, select {
+  display: block;
+  font-size: 1.2rem;
+}
+
+input, select, button {
+  border-radius: 5px;
+  border-color: lightgray;
+  border-width: 1px;
+  width: 100%;
+}
+
+#btn {
+  background-color: palegreen;
+  color: black;
+  border-radius: 5px;
+  width: 100%;
+}
+
+#main-img {
+  width: 100vw;
+}
+
+
